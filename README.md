@@ -1,5 +1,7 @@
 # PhoenixFrameworkJsonApiExample
 
+This is a example for a phoenix framework api with json api. The emberjs client app example you can find on my github repositorys.
+
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
