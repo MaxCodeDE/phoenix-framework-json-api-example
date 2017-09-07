@@ -7,6 +7,7 @@ defmodule PhoenixFrameworkJsonApiExample.Test.Todo do
   schema "todos" do
     field :author, :string
     field :text, :string
+    field :done, :boolean, default: false
 
     timestamps()
   end
@@ -14,7 +15,7 @@ defmodule PhoenixFrameworkJsonApiExample.Test.Todo do
   @doc false
   def changeset(%Todo{} = todo, attrs) do
     todo
-    |> cast(attrs, [:author, :text])
-    |> validate_required([:author, :text])
+    |> cast(attrs, [:author, :text, :done])
+    |> validate_required([:author, :text, :done])
   end
 end

@@ -5,6 +5,7 @@ defmodule PhoenixFrameworkJsonApiExample.Repo.Migrations.CreateTodos do
     create table(:todos) do
       add :author, :string
       add :text, :string
+      add :done, :boolean
 
       timestamps()
     end

@@ -7,6 +7,6 @@ defmodule PhoenixFrameworkJsonApiExampleWeb.Router do
 
   scope "/api", PhoenixFrameworkJsonApiExampleWeb do
     pipe_through :api
-    resources "/todos", TodoController, except: [:new, :edit]
+    resources "/todos", TodoController
   end
 end
